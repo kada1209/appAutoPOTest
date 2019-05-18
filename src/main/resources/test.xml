@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="test" preserve-order="true"> <!--parallel="true"  并行-->
+    <test name="login">
+        <classes >
+            <class name="cases.Login"/>
+        </classes>
+    </test>
+    <test name="coinCenter">
+        <classes>
+            <class name="cases.CoinCenter"/>
+        </classes>
+    </test>
+    <test name="bookIndex">
+        <classes>
+            <class name="cases.BookIndex"/>
+        </classes>
+    </test>
+    <test name="bookplay">
+        <classes>
+            <class name="cases.BookPaly"/>
+        </classes>
+    </test>
+    <listeners>
+        <listener class-name="reportLinster.ExtentTestNGIReportListener"/>
+    </listeners>
+
+</suite>
